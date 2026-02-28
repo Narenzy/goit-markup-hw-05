@@ -584,4 +584,63 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
+/* #region subscribe  */
+.footer-subscribe {
+  margin-left: auto;
+}
+.footer-title-subscribe {
+  color: #fff;
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 255);
+  border-radius: 4px;
+
+  color: #fff;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border: 1px solid #31d0aa;
+}
+.subscribe-input::placeholder {
+  color: #fff;
+}
+.subscribe-btn {
+  min-width: 165px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #4d5ae5;
+  color: #fff;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #31d0aa;
+}
+.subscribe-icon {
+  fill: #fff;
+}
+/* #endregion subscribe */
+
 /* #endregion footer */
