@@ -4,6 +4,10 @@ body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
 }
+body:has(.backdrop.is-open) {
+  overflow-y: hidden;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -652,6 +656,15 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
 }
 .modal {
   border-radius: 4px;
