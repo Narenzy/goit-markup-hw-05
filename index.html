@@ -500,11 +500,80 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form class="feetback-form">
-          <label for="Name">
-            <input type="text" />
+        <!-- #region feedbackform -->
+        <form class="feedback-form" name="feedback" autocomplete="off">
+          <div class="feedback-wrapper">
+            <label class="form-label" for="userName">Name</label>
+            <biv class="feedback-field">
+              <input
+                class="form-input"
+                name="userName"
+                type="text"
+                id="userName"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </biv>
+          </div>
+          <div class="feedback-wrapper">
+            <label class="form-label" for="userPhone">Phone</label>
+            <biv class="feedback-field">
+              <input
+                class="form-input"
+                name="userPhone"
+                type="tel"
+                id="userPhone"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </biv>
+          </div>
+          <div class="feedback-wrapper">
+            <label class="form-label" for="userEmail">Email</label>
+            <biv class="feedback-field">
+              <input
+                class="form-input"
+                name="userEmail"
+                type="email"
+                id="userEmail"
+              />
+              <svg class="form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </biv>
+          </div>
+          <div class="feedback-wrapper">
+            <label class="form-label" for="userComment">Comment</label>
+            <textarea
+              class="feedback-commentar"
+              name="userComment"
+              id="userComment"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <label class="feedback-agreement">
+            <input
+              type="checkbox"
+              name="userAgreement"
+              id="userAgreement"
+              value="true"
+              checked
+            />
+            <span class="feedback-toggler">
+              <svg class="feedback-toggler-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="feedback-link" href="index.html">Privacy Policy</a>
           </label>
+          <button class="send-btn" type="submit">Send</button>
         </form>
+        <!-- #endregion feedbackform -->
       </div>
     </div>
   </body>
