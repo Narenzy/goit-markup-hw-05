@@ -589,7 +589,7 @@ img {
 }
 /* #region subscribe  */
 .footer-subscribe {
-  margin-left: auto;
+  margin-left: 80px;
 }
 .footer-title-subscribe {
   font-family: "Roboto", sans-serif;
