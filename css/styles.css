@@ -734,6 +734,7 @@ img {
   border-radius: 4px;
   width: 100%;
   height: 120px;
+  margin-bottom: 16px;
 
   padding: 8px 16px 0px 16px;
   resize: none;
@@ -749,11 +750,13 @@ img {
 }
 /* custom checkbox */
 .feedback-agreement {
-  display: blocks;
+  display: flex;
   margin-bottom: 24px;
 
-  justify-content: center;
   align-items: center;
+
+  margin-left: 0;
+  padding-left: 0;
 
   font-size: 12px;
   line-height: 1.16667;
@@ -765,13 +768,30 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
+  cursor: pointer;
 
   display: inline-flex;
+  margin-left: 0px;
 
   justify-content: center;
   align-items: center;
+  margin-right: 8px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border, background-color;
 }
+
+.feedback-input:checked + .feedback-toggler {
+  border: 1px solid #404bbf;
+  background-color: #404bbf;
+}
+
+.feedback-input:checked + .feedback-toggler > .feedback-toggler-icon {
+  opacity: 1;
+  fill: #f4f4fd;
+}
+
 .feedback-toggler-icon {
+  opacity: 0;
 }
 .feedback-link {
   line-height: 1.33333;
@@ -781,6 +801,37 @@ img {
 }
 
 .send-btn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+  margin: 24px 0px 24px;
+
+  border-radius: 4px;
+  padding-block: 16px;
+  padding-inline: 32px;
+  border: none;
+  padding: 16px 32px;
+  margin-left: 95px;
+
+  width: 169px;
+  height: 56px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+
+  background-color: #4d5ae5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #404bbf;
 }
 /* #endregion modal form */
 
