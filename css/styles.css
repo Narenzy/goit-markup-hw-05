@@ -659,6 +659,9 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition:
+    opacity 250ms ease,
+    visibility 250ms ease;
 }
 
 .backdrop.is-open {
@@ -691,7 +694,7 @@ img {
   position: relative;
 }
 .form-input {
-  display: inline-block;
+  display: flex;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 100%;
