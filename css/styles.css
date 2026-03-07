@@ -494,11 +494,8 @@ img {
 /* #endregion portfolio */
 /* #region footer */
 .footer {
-  max-width: 1440px;
   padding: 100px 0;
-  flex-direction: row;
   background-color: #2e2f42;
-  margin: 0 auto;
 }
 .footer .container {
   display: flex;
@@ -756,11 +753,13 @@ img {
 
   padding: 8px 16px 0px 16px;
   resize: none;
+  outline: none;
+
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedback-commentar:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .feedback-commentar::placeholder {
