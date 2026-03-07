@@ -680,8 +680,7 @@ img {
 /* #region modal form */
 .feedback-form {
   border-radius: 4px;
-  width: 360px;
-  height: 336px;
+  width: 100%;
 }
 .feedback-wrapper {
 }
